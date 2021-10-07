@@ -21,7 +21,9 @@ fn create_info_view() -> ResizedView<NamedView<TextView>> {
     let help = "You can find your country or continent in left side list\n\
      Click or <Enter> to fetch Covid data about it\n
     You can press any character keyboard to quick jump, eg \'v\' to jump to countries start with v\n\
-    You can also press Tab to quick move between view and buttons";
+    You can also press Tab to quick move between view and buttons\n\
+Or use <Esc> to quick quit
+    ";
     let info_view = TextView::new(help).with_name("info_view").min_width(50);
     info_view
 }
@@ -125,7 +127,7 @@ fn continent_board_frame() -> Dialog {
 
 
     let mut board_wrapper = Dialog::around(board).title("Search by continent")
-        .button("Switch to continent",|s|{
+        .button("Switch to contry",|s|{
             s.pop_layer();
             let view = country_board_frame();
             s.add_layer(view);
