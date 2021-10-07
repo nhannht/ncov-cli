@@ -1,4 +1,4 @@
-## My first attemp to write something useful in Rust
+## My first attempt to write something useful in Rust
 
 
 ![how to use](./ezgif.com-gif-maker.gif)
@@ -9,12 +9,15 @@ cargo install ncov-cli
 ```
 
 ### How to use
-You can find your country or continent in left side list
-Click or <Enter> to fetch Covid data about it
-You can press any character keyboard to quick jump, eg \'v\' to jump to countries start with v
-You can also press Tab to quick move between view and buttons
+- You can find your country or continent in left side list
+- Click or <Enter> to fetch Covid data about it
+- You can press any character keyboard to quick jump, eg \'v\' to jump to countries start with v
+- You can also press Tab to quick move between view and buttons
 
-
+### Developing
 ```shell
-cargo run .
+ - git clone https://github.com/nhannht/ncov-cli
+- cd ncov-cli
+- cargo build 
+
 ```
