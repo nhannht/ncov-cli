@@ -2,7 +2,9 @@
 name = "ncov-cli"
 version = "0.1.0"
 edition = "2021"
-
+description = "Simple ncov checker written in Rust"
+license="MIT"
+repository="https://github.com/nhannht/ncov-cli"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
